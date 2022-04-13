@@ -6,7 +6,7 @@
 /*   By: estarck <estarck@student.42mulhouse.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 13:38:11 by estarck           #+#    #+#             */
-/*   Updated: 2022/04/12 19:24:01 by estarck          ###   ########.fr       */
+/*   Updated: 2022/04/13 10:13:57 by estarck          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,9 +54,9 @@ int	main(int argc, char **argv)
 	int	pid;
 
 	i = 0;
-	pid = ft_atoi(argv[1]);
 	if (argc == 3)
 	{
+		pid = ft_atoi(argv[1]);
 		while (argv[2][i] != '\0')
 		{
 			push_server(pid, argv[2][i]);
